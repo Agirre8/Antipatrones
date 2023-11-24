@@ -28,3 +28,26 @@ def calcular(operacion, num1, num2):
 
 #ahora tenemos una función para cada operacion para que la funcion calculadora lo tenga mas facil ya que solo tiene que llamar a las funciones anteriores
 calcular("suma", 1, 2)
+
+
+"""""
+
+def calcular(operacion, num1, num2):
+    if operacion == 'suma':
+        return num1 + num2
+    if operacion == 'resta':
+        return num1 - num2
+    if operacion == 'multiplicacion':
+        return num1 * num2
+    if operacion == 'division':
+        if num2 != 0:
+            return num1 / num2
+        else:
+            print("No se puede dividir entre cero.")
+    else:
+        print("Operación no soportada.")
+
+Este codigo tiene varias características de ser Spagheti Code
+Manejo de errores: El código imprime un mensaje si la división entre cero ocurre, pero no detiene la ejecución o retorna nada
+Anidamiento de condiciones: Al usar una serie de if sin un patrón claro de control de flujo, se crea una estructura complicada y difícil de segui
+"""""
